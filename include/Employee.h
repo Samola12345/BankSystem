@@ -2,14 +2,16 @@
 #include "Person.h"
 #include "Validation.h"
 #include "iostream"
+#include <vector>
+#include "Client.h"
 using namespace std;
 
 class Employee:public Person
 {
-
 protected:
     double salary;
 public:
+    static vector<Employee> all_employees;
     Employee()
     {
         id = 1;
@@ -40,5 +42,9 @@ public:
         Person::display();
         cout << "Salary: " << salary << endl;
     }
+    void add_client(Client& c){
+        Client::all_clients.push_back(c);
+    }
+
 };
 

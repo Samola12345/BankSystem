@@ -57,8 +57,7 @@ public:
 		{
 			Client c1;
 			c1=Parser::parserToClient(line);
-			vector<Client> all_clients;
-			all_clients.push_back(c1);
+			Client::all_clients.push_back(c1);
 		}
 		file.close();
 	}
@@ -70,8 +69,7 @@ public:
 		{
 			Employee e1;
 			e1 = Parser::parserToEmployee(line);
-			vector<Employee> all_employees;
-			all_employees.push_back(e1);
+			Employee::all_employees.push_back(e1);
 		}
 		file.close();
 	}
@@ -83,8 +81,7 @@ public:
 		{
 			Admin a1;
 			a1 = Parser::parserToAdmin(line);
-			vector<Admin> all_admins;
-			all_admins.push_back(a1);
+			Admin::all_admins.push_back(a1);
 		}
 		file.close();
 	}

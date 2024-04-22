@@ -9,10 +9,7 @@ using namespace std;
 
 int main()
 {
-    ///heloooooooooooooooooooo
-    ///nonannonymos test
-    ///hello world
-    // Annonymous test
+    //flsdnfjnsdfkjndkgfbfdkgbjfdsgbl
 
 	/*fstream file;
 	file.open("Clients.txt", ios::out);

@@ -2,6 +2,7 @@
 #include "Person.h"
 #include "Validation.h"
 #include "iostream"
+#include <vector>
 using namespace std;
 
 class Client :public Person
@@ -9,6 +10,7 @@ class Client :public Person
 	double balance;
 
 public:
+    static vector<Client> all_clients;
 	Client()
 	{
 	    id += 1;

@@ -1,9 +1,10 @@
 #pragma once
-#include"Employee.h";
-
+#include"Employee.h"
+#include <vector>
 class Admin :public Employee
 {
 public:
+    static vector<Admin> all_admins;
     Admin()
     {
         id = 10000;
