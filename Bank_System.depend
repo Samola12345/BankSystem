@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1713790035 source:f:\c++ projects\oop assignment\bank_system\main.cpp
+	"Client.h"
+	"iostream"
+	"FilesHelper.h"
+
+1713797123 f:\c++ projects\oop assignment\bank_system\include\fileshelper.h
+	<vector>
+	"iostream"
+	<fstream>
+	"Client.h"
+	"Admin.h"
+	"Employee.h"
+	<sstream>
+	"Parser.h"
+
+1713787365 f:\c++ projects\oop assignment\bank_system\include\client.h
+	"Person.h"
+	"Validation.h"
+	"iostream"
+
+1713788144 f:\c++ projects\oop assignment\bank_system\include\person.h
+	"Validation.h"
+	"iostream"
+
+1713776301 f:\c++ projects\oop assignment\bank_system\include\validation.h
+	<iostream>
+
+1713776301 f:\c++ projects\oop assignment\bank_system\include\admin.h
+	"Employee.h"
+
+1713776301 f:\c++ projects\oop assignment\bank_system\include\employee.h
+	"Person.h"
+	"Validation.h"
+	"iostream"
+
+1713776301 f:\c++ projects\oop assignment\bank_system\include\parser.h
+	<fstream>
+	<iostream>
+	<cstring>
+	<vector>
+	<sstream>
+	"Client.h"
+	"Admin.h"
+	"Employee.h"
+
