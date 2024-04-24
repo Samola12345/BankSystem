@@ -94,3 +94,56 @@
 	"Admin.h"
 	"Employee.h"
 
+1713884004 source:c:\users\amrha\source\repos\repobanksystem\banksystem\main.cpp
+	"Parser.h"
+	"Client.h"
+	"Admin.h"
+	"Employee.h"
+	"iostream"
+	"FilesHelper.h"
+
+1713882486 c:\users\amrha\source\repos\repobanksystem\banksystem\include\parser.h
+	<fstream>
+	<iostream>
+	<cstring>
+	<vector>
+	<sstream>
+	"Client.h"
+	"Admin.h"
+	"Employee.h"
+
+1713882486 c:\users\amrha\source\repos\repobanksystem\banksystem\include\client.h
+	"Person.h"
+	"Validation.h"
+	"iostream"
+	<vector>
+
+1713882486 c:\users\amrha\source\repos\repobanksystem\banksystem\include\person.h
+	"Validation.h"
+	"iostream"
+
+1713882486 c:\users\amrha\source\repos\repobanksystem\banksystem\include\validation.h
+	<iostream>
+
+1713884300 c:\users\amrha\source\repos\repobanksystem\banksystem\include\admin.h
+	"Employee.h"
+	"Client.h"
+	<vector>
+
+1713882486 c:\users\amrha\source\repos\repobanksystem\banksystem\include\employee.h
+	"Person.h"
+	"Validation.h"
+	"iostream"
+	<vector>
+	"Client.h"
+
+1713882486 c:\users\amrha\source\repos\repobanksystem\banksystem\include\fileshelper.h
+	<vector>
+	"iostream"
+	<fstream>
+	"Client.h"
+	"Admin.h"
+	"Employee.h"
+	<sstream>
+	"Parser.h"
+

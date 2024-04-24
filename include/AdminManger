@@ -1,0 +1,16 @@
+#ifndef ADMINMANGER_
+#define ADMINMANGER_
+
+
+class AdminManger
+{
+    public:
+        AdminManger();
+        virtual ~AdminManger();
+
+    protected:
+
+    private:
+};
+
+#endif // ADMINMANGER_

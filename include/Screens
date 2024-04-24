@@ -1,0 +1,16 @@
+#ifndef SCREENS_
+#define SCREENS_
+
+
+class Screens
+{
+    public:
+        Screens();
+        virtual ~Screens();
+
+    protected:
+
+    private:
+};
+
+#endif // SCREENS_

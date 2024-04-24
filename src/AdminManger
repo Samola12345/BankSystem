@@ -1,0 +1,11 @@
+#include "AdminManger."
+
+AdminManger::AdminManger()
+{
+    //ctor
+}
+
+AdminManger::~AdminManger()
+{
+    //dtor
+}

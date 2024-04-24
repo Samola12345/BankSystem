@@ -36,8 +36,10 @@
 		</Compiler>
 		<Unit filename="include/Admin.h" />
 		<Unit filename="include/Client.h" />
+		<Unit filename="include/ClientManger.h" />
 		<Unit filename="include/DataSourceInterface.h" />
 		<Unit filename="include/Employee.h" />
+		<Unit filename="include/EmployeeManger.h" />
 		<Unit filename="include/FilesHelper.h" />
 		<Unit filename="include/Parser.h" />
 		<Unit filename="include/Person.h" />
