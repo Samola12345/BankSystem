@@ -11,8 +11,7 @@ protected:
 public:
     static int id;
     Person(){}
-    Person(int id, string name, string password) {
-        this->id = id;
+    Person(string name, string password) {
         set_name(name);
         set_password(password);
     }

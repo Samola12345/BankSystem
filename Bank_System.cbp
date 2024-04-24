@@ -40,6 +40,7 @@
 		<Unit filename="include/DataSourceInterface.h" />
 		<Unit filename="include/Employee.h" />
 		<Unit filename="include/EmployeeManger.h" />
+		<Unit filename="include/FileManager.h" />
 		<Unit filename="include/FilesHelper.h" />
 		<Unit filename="include/Parser.h" />
 		<Unit filename="include/Person.h" />

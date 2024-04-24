@@ -11,8 +11,7 @@ using namespace std;
 
 class FilesHelper
 {
-private:
-
+public:
 	static void SaveLast(string fileName, int id)
 	{
 		fstream file;
@@ -21,7 +20,6 @@ private:
 		file << id;
 		file.close();
 	}
-public:
 	static int GetLast(string fileName)
 	{
 		ifstream file;
@@ -31,7 +29,7 @@ public:
 		file >> id;
 		return id;
 	}
-	static void saveClient(Client c) {
+	static void saveClient(Client& c) {
 		int id=GetLast("ClientlastId.txt");
 		fstream file;
 		file.open("client.txt", ios::app);

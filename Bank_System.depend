@@ -44,25 +44,29 @@
 	"Admin.h"
 	"Employee.h"
 
-1713809546 source:f:\c++ projects\oop assignment\repo\banksystem\main.cpp
+1713984869 source:f:\c++ projects\oop assignment\repo\banksystem\main.cpp
+	"Parser.h"
 	"Client.h"
-	"iostream"
+	"Admin.h"
+	"Employee.h"
+	<iostream>
 	"FilesHelper.h"
+	"ClientManger.h"
 
-1713809546 f:\c++ projects\oop assignment\repo\banksystem\include\client.h
+1713977494 f:\c++ projects\oop assignment\repo\banksystem\include\client.h
 	"Person.h"
 	"Validation.h"
 	"iostream"
 	<vector>
 
-1713809546 f:\c++ projects\oop assignment\repo\banksystem\include\person.h
+1713977494 f:\c++ projects\oop assignment\repo\banksystem\include\person.h
 	"Validation.h"
 	"iostream"
 
-1713809546 f:\c++ projects\oop assignment\repo\banksystem\include\validation.h
+1713972214 f:\c++ projects\oop assignment\repo\banksystem\include\validation.h
 	<iostream>
 
-1713809546 f:\c++ projects\oop assignment\repo\banksystem\include\fileshelper.h
+1713977494 f:\c++ projects\oop assignment\repo\banksystem\include\fileshelper.h
 	<vector>
 	"iostream"
 	<fstream>
@@ -72,19 +76,19 @@
 	<sstream>
 	"Parser.h"
 
-1713812038 f:\c++ projects\oop assignment\repo\banksystem\include\admin.h
+1713977517 f:\c++ projects\oop assignment\repo\banksystem\include\admin.h
 	"Employee.h"
 	"Client.h"
 	<vector>
 
-1713811446 f:\c++ projects\oop assignment\repo\banksystem\include\employee.h
+1713983816 f:\c++ projects\oop assignment\repo\banksystem\include\employee.h
 	"Person.h"
 	"Validation.h"
 	"iostream"
 	<vector>
 	"Client.h"
 
-1713809546 f:\c++ projects\oop assignment\repo\banksystem\include\parser.h
+1713972214 f:\c++ projects\oop assignment\repo\banksystem\include\parser.h
 	<fstream>
 	<iostream>
 	<cstring>
@@ -146,4 +150,10 @@
 	"Employee.h"
 	<sstream>
 	"Parser.h"
+
+1713985338 f:\c++ projects\oop assignment\repo\banksystem\include\clientmanger.h
+	<person.h>
+	<Client.h>
+	<Employee.h>
+	<Admin.h>
 

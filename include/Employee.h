@@ -17,7 +17,7 @@ public:
         id = 1;
         salary = 0;
     }
-    Employee(int id, string name, string password, double salary) :Person(id, name, password)
+    Employee(string name, string password, double salary) :Person(name, password)
     {
         set_salary(salary);
     }
@@ -45,7 +45,7 @@ public:
     void add_client(Client& c){
         Client::all_clients.push_back(c);
     }
-    Client* search_client(int id){
+    static Client* search_client(int id){
         for(int i=0;i<Client::all_clients.size();i++){
             if (Client::all_clients[i].get_ID()==id){
                 return &Client::all_clients[i];

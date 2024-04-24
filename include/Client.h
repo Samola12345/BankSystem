@@ -16,7 +16,7 @@ public:
 	    id += 1;
 		balance = 0;
 	}
-	Client(int id, string name, string password, double balance) :Person(id, name, password)
+	Client( string name, string password, double balance) :Person(name, password)
 	{
 		set_balance(balance);
 	}
