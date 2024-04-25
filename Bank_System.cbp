@@ -35,6 +35,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Admin.h" />
+		<Unit filename="include/Adminmaneger.h" />
 		<Unit filename="include/Client.h" />
 		<Unit filename="include/ClientManger.h" />
 		<Unit filename="include/DataSourceInterface.h" />
@@ -44,6 +45,7 @@
 		<Unit filename="include/FilesHelper.h" />
 		<Unit filename="include/Parser.h" />
 		<Unit filename="include/Person.h" />
+		<Unit filename="include/Screens.h" />
 		<Unit filename="include/validation.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>

@@ -12,7 +12,7 @@ using namespace std;
 class FilesHelper
 {
 public:
-	static void SaveLast(string fileName, int id)
+	static void SaveLast(string fileName, int id)///to add last id in the last id file
 	{
 		fstream file;
 		file.open(fileName,ios::out);
@@ -20,6 +20,7 @@ public:
 		file << id;
 		file.close();
 	}
+	///to get last id from the lastidfile
 	static int GetLast(string fileName)
 	{
 		ifstream file;
@@ -43,11 +44,11 @@ public:
 		fstream file;
 		file.open(fileName,ios::app);
 		file.clear();
-		file << id + 2 << '|' << e.get_Name() << '|' << e.get_password() << '|' << e.get_salary() << endl;
+		file << id + 1 << '|' << e.get_Name() << '|' << e.get_password() << '|' << e.get_salary() << endl;
 		file.close();
-		SaveLast(last_id_file, id + 2);
+		SaveLast(last_id_file, id + 1);
 	}
-	static void get_clients() {
+	static void get_clients(){
 		string line;
 		ifstream file;
 		file.open("client.txt");

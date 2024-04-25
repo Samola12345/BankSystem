@@ -1,13 +1,20 @@
 #ifndef SCREENS_H
 #define SCREENS_H
-
+#include"Client.h"
+#include"Admin.h"
+#include"Employee.h"
+#include <iostream>
+#include"FilesHelper.h"
+#include "ClientManger.h"
+#include "Screens.h"
+#include "Parser.h"
 
 class Screens
 {
     public:
         static void Bank_name ()
         {
-            cout << "AMS Bank"<<endl;
+            cout << "Circle_k_Bank"<<endl;
 
         }
         static void welcome ()
@@ -19,18 +26,13 @@ class Screens
 
         static int login_as()
         {
-            cout <<"How can i help you"<<endl;
-            cout <<"for Client press 1 " <<endl;
-            cout <<"for Employee press 2 " <<endl;
-            cout <<"for Admin press 3 " <<endl;
+            cout <<"How can i help you ?"<<endl<<"for Client press 1 " <<endl<<"for Employee press 2 " <<endl<<"for Admin press 3 " <<endl;
             int x ;
             cin >> x;
             return x;
         }
-              static void login_Options()
+        static void login_Options()
         {
-
-
             switch (login_as()){
             case 1:
                 ClientManger::PrintClientMenu();
@@ -40,9 +42,19 @@ class Screens
                 EmployeeManger::PrintEmployeMenu();
                 break;
             case 3:
-                Adminmaneger::PrintAdminMenu();
+                Adminmaneger::PrintEmployeeMenu();
             }
         }
+    static void logout(){
+            cout<<"logged out\n"<<"see you soon"<<endl;
+            exit(0);
+    }
+    static void run_app(){
+        Bank_name();
+        welcome();
+        login_Options();
+        login_as();
+    }
 };
 
-#endif // SCREENS_H
+#endif

@@ -2,50 +2,27 @@
 #include"Employee.h"
 #include"Client.h"
 #include <vector>
+#include "FilesHelper.h"
 class Admin :public Employee
 {
 public:
-    static vector<Admin> all_admins;
     Admin()
     {
-        id = 10000;
+        id = 1000000;
     }
-    Admin( string name, string password, double salary) :Employee( name, password, salary){}
+    Admin( string name, string password, double salary) :Employee(name, password, salary){
+
+    }
     void display()
     {
         Employee::display();
     }
-    void add_client(Client& c)
+    ///------------------------------
+    static void add_employee(Employee& e)
     {
-        Client::all_clients.push_back(c);
+        Employee::all_employees.push_back(e);
     }
-    Client* search_client(int id)
-    {
-        for(int i=0;i<Client::all_clients.size();i++){
-            if (Client::all_clients[i].get_ID()==id){
-                return &Client::all_clients[i];
-            }else
-                return nullptr;
-        }
-    }
-    void List_client()
-    {
-        for(int i=0;i<Client::all_clients.size();i++)
-        {
-            Client::all_clients[i].display();
-            cout<<"-------the next client is--------- "<<endl;
-        }
-    }
-    void edit_client(int id, string name, string password,double balance){
-        search_client(id)->set_name(name);
-        search_client(id)->set_balance(balance);
-        search_client(id)->set_password(password);
-    }
-    void add_employee(Employee& c)
-    {
-        Employee::all_employees.push_back(c);
-    }
-    Employee* search_employee(int id){
+    static Employee* search_employee(int id){
         for(int i=0;i<Employee::all_employees.size();i++)
         {
             if (Employee::all_employees[i].get_ID()==id)
