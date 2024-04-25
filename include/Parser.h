@@ -4,9 +4,7 @@
 #include <cstring>
 #include <vector>
 #include<sstream>
-#include"Client.h"
-#include"Admin.h"
-#include"Employee.h"
+#include<Admin.h>
 
 using namespace std;
 
@@ -49,12 +47,8 @@ public:
         e.set_name(v[1]);
         e.set_password(v[2]);
         e.set_salary(stod(v[3]));
-
         return e;
-
-
     }
-
     static Admin parserToAdmin(string line)
     {
         Admin a;

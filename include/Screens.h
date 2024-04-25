@@ -1,15 +1,9 @@
 #ifndef SCREENS_H
 #define SCREENS_H
-#include"Client.h"
-#include"Admin.h"
-#include"Employee.h"
 #include <iostream>
-#include"FilesHelper.h"
 #include "ClientManger.h"
-#include "Screens.h"
-#include "Parser.h"
 
-class Screens
+class Screen
 {
     public:
         static void Bank_name ()

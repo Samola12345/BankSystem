@@ -1,9 +1,7 @@
 #ifndef ADMINMANEGER_H
 #define ADMINMANEGER_H
 #pragma once
-#include <ClientManger.h>
-#include <Admin.h>
-#include <Employee.h>
+#include "EmployeeManger.h"
 
 class Adminmaneger
 {

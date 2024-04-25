@@ -2,10 +2,7 @@
 #include<vector>
 #include "iostream"
 #include <fstream>
-#include"Client.h"
-#include"Admin.h"
-#include"Employee.h"
-#include<sstream>
+#include <sstream>
 #include"Parser.h"
 using namespace std;
 
@@ -80,7 +77,7 @@ public:
 		{
 			Admin a1;
 			a1 = Parser::parserToAdmin(line);
-			Admin::all_admins.push_back(a1);
+			Admin::all_employees.push_back(a1);
 		}
 		file.close();
 	}

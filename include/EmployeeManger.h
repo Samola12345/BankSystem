@@ -2,9 +2,6 @@
 #ifndef EMPLOYEEMANGER_H
 #define EMPLOYEEMANGER_H
 #include "ClientManger.h"
-#include "Admin.h"
-#include "Employee.h"
-#include "Client.h"
 class EmployeeManger
 {
 public:

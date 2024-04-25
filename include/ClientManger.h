@@ -1,13 +1,12 @@
 #pragma once
-#include <person.h>
-#include <Client.h>
 #include <Employee.h>
-#include <Admin.h>
+#include "FilesHelper.h"
+#include "Screens.h"
 class ClientManger
 {
 public:
 
- static Client* Login (int id , string password)
+static Client* Login (int id , string password)
  {
     FilesHelper::get_clients();
     if(Employee::search_client(id) != nullptr){
@@ -70,8 +69,10 @@ public:
         case 5:
             ptr_client->display();
             break;
-        default:
-            Screens::logout();
+            {
+                default:
+                Screen::logout();
+            }
         }
     }while (x >= 1 || x <= 6);
  }
