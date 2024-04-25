@@ -65,3 +65,4 @@ public:
 		cout << "Balance: " << balance << endl;
 	}
 };
+vector<Client> Client::all_clients;

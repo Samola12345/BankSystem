@@ -65,6 +65,7 @@ public:
         search_client(id)->set_password(password);
     }
 };
+vector<Employee>Employee::all_employees;
 class Admin :public Employee
 {
 public:

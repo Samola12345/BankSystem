@@ -17,27 +17,22 @@ public:
             cout<<"1- add client"<<endl<<"2- search client"<<"3- list clients"<<endl<<"4- edit client"<<endl<<"5- display"<<endl;
             cout<<"6- press any key to logout";
             cin>>x;
-            switch(x){
-                case 1:
-                    NewClient(e);
-                    break;
-                case 2:
-                    SearchForClient(e);
-                    break;
-                case 3:
-                    ListAllClients(e);
-                    break;
-                case 4:
-                    EditClientInfo(e);
-                    break;
-                case 5:
-                    e->display();
-                    break;
-                default:
-                    Screens::logout();
+            if(x==1){
+                NewClient(e);
+            }
+            else if(x==2){
+                SearchForClient(e);
+            }
+            else if (x==3){
+                ListAllClients(e);
+            }
+            else if (x==4){
+                EditClientInfo(e);
+            }
+            else if (x==5){
+                e->display();
+            }
             }while (x >= 1 || x <= 6);
-        }
-
     }
     static void NewClient(Employee* e)
     {

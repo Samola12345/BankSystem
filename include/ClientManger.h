@@ -1,7 +1,6 @@
 #pragma once
 #include <Employee.h>
 #include "FilesHelper.h"
-#include "Screens.h"
 class ClientManger
 {
 public:
@@ -69,10 +68,9 @@ static Client* Login (int id , string password)
         case 5:
             ptr_client->display();
             break;
-            {
-                default:
-                Screen::logout();
-            }
+
+//        default:
+//            Screeeen::logout();
         }
     }while (x >= 1 || x <= 6);
  }
@@ -87,18 +85,11 @@ static Client* Login (int id , string password)
         FilesHelper::clear("client","ClientlastId");
         for(int i=0;i<Client::all_clients.size();i++)
             {
-                FilesHelper::saveClient(all_clients[i]);
+                FilesHelper::saveClient(Client::all_clients[i]);
             }
     }
  }
- static bool ClientOptions(Client* c)
- {
-
- }
-
-
-
-
 };
+
 
 
